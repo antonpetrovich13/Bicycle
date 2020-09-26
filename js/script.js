@@ -46,7 +46,6 @@ if (animItems.length > 0) {
 }
 
 
-
 $(document).ready(function() {
 	$('.menu__item').click(function(event)
 	 {

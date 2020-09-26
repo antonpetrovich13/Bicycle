@@ -106,10 +106,10 @@ body.lock {
 
 .page {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,10 +128,10 @@ body.lock {
 
 .main-screen__bg {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -231,7 +231,7 @@ body.lock {
     right: 0;
     width: 100%;
     height: 2px;
-    background-color: #000;
+    background-color: #4d4959;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -243,7 +243,7 @@ body.lock {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #000;
+    background-color: #4d4959;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -255,7 +255,7 @@ body.lock {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #000;
+    background-color: #4d4959;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
