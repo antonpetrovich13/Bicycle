@@ -1,0 +1,209 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap);
+
+.ibg{
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		img{display: none};
+}
+
+body,html{
+	font-family: 'Lato';
+	height: 100%;
+}
+body.lock{
+	overflow: hidden;
+}
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container{
+	max-width: 1130px;
+	padding: 0 15px;
+}
+
+//==================================
+.page {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+}
+.main-screen {
+	flex: 1 0 100%;
+	position: relative;
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left:0;
+	}
+}
+
+//  <HEADER>  ==============================================
+
+.header {
+	position: absolute;
+	width: 100%;
+	z-index: 50;
+	top: 35px;
+	&__row {
+		height: 85px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__menu {
+	}
+	&__logo{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%,0px);
+	}
+@media (max-width: 767px) {
+	top: 15px;
+}
+}
+.menu {
+	&__item {}
+	&__body {}
+	&__list {
+		position: relative;
+		display: flex;
+		& li{
+			position: relative;
+			padding: 0 37.5px;
+			&:nth-child(2){
+			padding: 0 110px 0 37.5px;
+		}
+			&:nth-child(3){
+				padding: 0 37.5px 0 110px;
+			}
+			&:after{
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 2px;
+			height: 2px;
+			background-color: #4d4959;
+			border-radius: 50%;
+			margin: -1.5px 0 0 0;
+			}
+			&:nth-child(2),
+			&:nth-child(4){
+				&:after{
+					display: none;
+				}
+			}
+		}
+	}
+	&__link {
+		position: relative;
+		font-size: 13px;
+		line-height: 1.2;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: #4d4959;
+	}
+
+	@media (max-width: 767px) {
+		.menu__item{
+			display: block;
+			position: absolute;
+			z-index: 1;
+			width: 30px;
+			height: 20px;
+			right: 0;
+			margin: 0 20px 0 0;
+			& span{
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 100%;
+				height: 2px;
+				background-color: #000;
+				transition: all 0.3s ease 0s;
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				top: 8px;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: #000;
+				transition: all 0.3s ease 0s;
+			}
+			&:after{
+				content: '';
+				position: absolute;
+				top: 16px;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: #000;
+				transition: all 0.3s ease 0s;
+			}
+		}
+		.menu__item.active span{
+			transition: all 0.3s ease 0s;
+			transform:rotate(45deg);
+			top:8px;
+			background-color: #fff;
+		}
+		.menu__item.active:before{
+			transition: all 0.3s ease 0s;
+			transform:scale(0);
+			background-color: #fff;
+		}
+		.menu__item.active:after{
+			transition: all 0.3s ease 0s;
+			top: 8px;
+			transform:rotate(-45deg);
+			background-color: #fff;
+		}
+		&__body{
+			position:fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left:0;
+			background-color: #4d4959;
+			transition: all 0.3s ease 0s;
+			transform: scale(0);
+			overflow: auto;
+		}
+		&__body.active{
+			transition: all 0.3s ease 0s;
+			transform: scale(1);
+		}
+		&__list{
+			padding: 140px 0 0 0;
+			flex-direction:column;
+			align-items: center;
+			& li{
+				padding: 0 !important;
+				margin: 0 0 45px 0;
+			}
+		}
+		&__link{
+			color: #fff;
+			font-size: 20px;
+		}
+	}
+}
+
+.item-menu{
+	display: none;
+}
