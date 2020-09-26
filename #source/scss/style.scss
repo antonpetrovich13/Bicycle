@@ -23,6 +23,7 @@ body.lock{
 
 .container{
 	max-width: 1130px;
+	margin: 0 auto;
 	padding: 0 15px;
 }
 
@@ -205,4 +206,38 @@ body.lock{
 
 .item-menu{
 	display: none;
+}
+
+//  <GENERATION>  =========================================
+
+.generation {
+	padding: 120px 0;
+	background-color: #f7f7f7;
+	&__block {}
+	@media (max-width: 900px) {
+		padding: 80px 0;
+	}
+	@media (max-width: 600px) {
+		padding: 30px 0;
+	}
+}
+.block {
+	text-align: center;
+	&__icon {
+		margin: 0 0 32px 0;
+	}
+	&__title {
+		margin:  0 0 20px 0;
+		font-size: 18px;
+		line-height: 1.2;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: #353738;
+	}
+	&__text {
+		font-size: 18px;
+		line-height: 34px;
+		color: #848789;
+	}
 }
