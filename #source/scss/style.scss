@@ -64,6 +64,8 @@ body.lock{
 	&__menu {
 	}
 	&__logo{
+	}
+	&__link{
 		position: absolute;
 		top: 0;
 		left: 50%;
@@ -71,6 +73,19 @@ body.lock{
 	}
 @media (max-width: 767px) {
 	top: 15px;
+	&__link.active{
+		position: fixed;
+		transform: translate(-50%,15px);
+		animation-name: logo;
+		animation-duration: 0.5s;
+		transition: all 0.3s ease 0s;
+	}
+	@keyframes logo{
+		0%{
+			transform: scale(0);
+		}
+		100{transform: scale(1);}
+	}
 }
 }
 .menu {

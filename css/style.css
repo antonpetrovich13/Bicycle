@@ -155,7 +155,7 @@ body.lock {
   align-items: center;
 }
 
-.header__logo {
+.header__link {
   position: absolute;
   top: 0;
   left: 50%;
@@ -167,6 +167,39 @@ body.lock {
 @media (max-width: 767px) {
   .header {
     top: 15px;
+  }
+  .header__link.active {
+    position: fixed;
+    -webkit-transform: translate(-50%, 15px);
+    -ms-transform: translate(-50%, 15px);
+    transform: translate(-50%, 15px);
+    -webkit-animation-name: logo;
+    animation-name: logo;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  @-webkit-keyframes logo {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    100 {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes logo {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    100 {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
   }
 }
 

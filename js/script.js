@@ -52,18 +52,19 @@ if (animItems.length > 0) {
 $(document).ready(function() {
 	$('.menu__item').click(function(event)
 	 {
-		$('.menu__item,.menu__body').
+		$('.menu__item,.menu__body,.header__link').
 			toggleClass('active');
 		$('body').toggleClass('lock');
 	});
 });
 
 $(document).ready(function() {
-    $('.menu__link').click(function(event) {
-        $('.menu__item, .menu__body').removeClass('active');
+    $('.menu__link, .header__link').click(function(event) {
+        $('.menu__item, .menu__body, .header__link').removeClass('active');
         $('body').removeClass('lock')
     });
 });
+
 
 
 // ПЛАВНАЯ НАВИГАЦИЯ
