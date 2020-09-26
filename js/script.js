@@ -1,4 +1,5 @@
 
+// ФУНКЦИЯ IBG
 function ibg(){
 $.each($('.ibg'), function(index, val) {
 if($(this).find('img').length>0){
@@ -8,6 +9,8 @@ $(this).css('background-image','url("'+$(this).find('img').attr('src')+'")');
 }
 ibg();
 
+
+// АНИМАЦИЯ ПРИ СКРОЛЛЕ
 const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
@@ -45,7 +48,7 @@ if (animItems.length > 0) {
 	}, 300);
 }
 
-
+// МЕНЮ-БУРГЕР
 $(document).ready(function() {
 	$('.menu__item').click(function(event)
 	 {
@@ -60,4 +63,21 @@ $(document).ready(function() {
         $('.menu__item, .menu__body').removeClass('active');
         $('body').removeClass('lock')
     });
+});
+
+
+// ПЛАВНАЯ НАВИГАЦИЯ
+$(function(){
+        $("a[href^='#']").click(function(){
+                var _href = $(this).attr("href");
+                $("html, body").animate({scrollTop: $(_href).offset().top+"px"},500);
+                return false;
+        });
+});
+
+
+$(function() {
+    $('.footer__logo').click(function(){
+       $('html, body').animate({scrollTop:0}, 'slow');
+   });
 });
