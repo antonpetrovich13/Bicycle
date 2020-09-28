@@ -284,6 +284,16 @@ body.lock{
 .brands {
 	&__row {
 		display: flex;
+		&_rev{
+			@media (max-width: 1100px) {
+				.brands__column{
+				order: 2;
+				&_b{
+					order: 1;
+				}
+			}
+		}
+			}
 	}
 	&__column {
 		flex: 0 1 33.333%;

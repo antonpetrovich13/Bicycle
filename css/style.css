@@ -438,6 +438,19 @@ body.lock {
   display: flex;
 }
 
+@media (max-width: 1100px) {
+  .brands__row_rev .brands__column {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .brands__row_rev .brands__column_b {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
 .brands__column {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 33.333%;
