@@ -9,6 +9,12 @@ $(this).css('background-image','url("'+$(this).find('img').attr('src')+'")');
 }
 ibg();
 
+$(document).ready(function(){
+	$('.slider').slick({
+		arrows: false,
+		dots:true,
+	});
+});
 
 // АНИМАЦИЯ ПРИ СКРОЛЛЕ
 const animItems = document.querySelectorAll('._anim-items');
@@ -82,3 +88,4 @@ $(function() {
        $('html, body').animate({scrollTop:0}, 'slow');
    });
 });
+
