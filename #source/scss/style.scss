@@ -378,7 +378,7 @@ body.lock{
 
 .slider {
 	background-color: #f7f7f7;
-	padding: 120px 0 175px 0;
+	padding: 120px 0 68px 0;
 	position: relative;
 	&__slide {
 		text-align: center;
@@ -423,15 +423,30 @@ body.lock{
 		background-color: #f7f7f7;
 		border: 1px solid #a9afb3;
 	}
+	@media (max-width: 865px) {
+		padding: 55px 0 55px 0;
+		& .slick-dots{
+			margin: 45px 0 0 0;
+		}
+	}
+	@media (max-width: 768px) {
+		&__title{
+			margin: 25px 0 0 0;
+		}
+		&__subtitle{
+			margin: 18px 0 0 0;
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+	@media (max-width: 480px) {
+		padding: 35px 0 35px 0;
+		& .slick-dots{
+			margin: 25px 0 0 0;
+		}
+	}
 }
 
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
 .slick-list {
 	overflow: hidden;
 }
@@ -439,23 +454,4 @@ body.lock{
 .slick-track{
 	display: flex;
 }
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
 
-/* Точки (булиты) */
-.slick-dots{
-}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}

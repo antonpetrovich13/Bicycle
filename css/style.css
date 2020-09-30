@@ -556,7 +556,7 @@ body.lock {
 
 .slider {
   background-color: #f7f7f7;
-  padding: 120px 0 175px 0;
+  padding: 120px 0 68px 0;
   position: relative;
 }
 
@@ -616,10 +616,35 @@ body.lock {
   border: 1px solid #a9afb3;
 }
 
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
-/* Ограничивающая оболочка */
+@media (max-width: 865px) {
+  .slider {
+    padding: 55px 0 55px 0;
+  }
+  .slider .slick-dots {
+    margin: 45px 0 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider__title {
+    margin: 25px 0 0 0;
+  }
+  .slider__subtitle {
+    margin: 18px 0 0 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider {
+    padding: 35px 0 35px 0;
+  }
+  .slider .slick-dots {
+    margin: 25px 0 0 0;
+  }
+}
+
 .slick-list {
   overflow: hidden;
 }
@@ -630,13 +655,3 @@ body.lock {
   display: -ms-flexbox;
   display: flex;
 }
-
-/* Слайд */
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка */
-/* Точки (булиты) */
-/* Активная точка */
-/* Элемент точки */
