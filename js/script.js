@@ -9,10 +9,15 @@ $(this).css('background-image','url("'+$(this).find('img').attr('src')+'")');
 }
 ibg();
 
+// СЛАЙДЕР
 $(document).ready(function(){
 	$('.slider').slick({
 		arrows: false,
 		dots:true,
+		autoplay:true,
+		speed:1500,
+		autoplaySpeed:4000,
+		pauseOnHover:true,
 	});
 });
 
