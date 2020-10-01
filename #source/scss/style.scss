@@ -370,6 +370,10 @@ body.lock{
 			&__logo{
 				opacity: 1;
 				visibility: visible;
+				&_n{
+					opacity: 0;
+					visibility: hidden;
+				}
 			}
 	}
 }
@@ -454,4 +458,41 @@ body.lock{
 .slick-track{
 	display: flex;
 }
+
+// <SHOP> ============================================================
+
+.shop {
+	overflow: hidden;
+	&__top {
+		display: flex;
+	}
+	&__column {
+		flex: 0 1 16.666%;
+		&_b {
+			flex: 0 1 33.333%;
+		}
+	}
+	&__block {}
+	&__bottom {}
+}
+.block-shop {
+	height: 100%;
+	&__row {
+		display: flex;
+	}
+	&__column {
+		flex: 0 1 50%;
+	}
+	&__item {
+		height: auto;
+		padding: 0 0 50% 0;
+		&_b{
+			padding: 0 0 200.5% 0;
+		}
+		&_l{
+			padding: 0 0 100% 0;
+		}
+	}
+}
+
 
