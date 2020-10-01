@@ -15,7 +15,7 @@ $(document).ready(function(){
 		arrows: false,
 		dots:true,
 		autoplay:true,
-		speed:1500,
+		speed:1000,
 		autoplaySpeed:4000,
 		pauseOnHover:true,
 	});
