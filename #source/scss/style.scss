@@ -479,6 +479,8 @@ body.lock{
 		text-align: center;
 	}
 	&__link{
+		position: relative;
+		z-index: 2;
 		display:inline-block;
 		padding: 0 60px;
 		line-height: 48px;
@@ -487,6 +489,46 @@ body.lock{
 		letter-spacing: 0.2em;
 		color: #ffffff;
 		border: 1px solid #fff;
+		transition: all 0.4s ease 0.01s;
+		& span{
+				position: absolute;
+				transition: all 0.4s ease 0s;
+				display: block;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+		}
+		&:hover{
+			transition: all 0.4s ease 0.25s;
+			border: 1px solid #282f35;
+			& p{
+				transition: all 0.4s ease 0s;
+				position: relative;
+				z-index: 2;
+				color: #282f35;
+			}
+			& span{
+				position: absolute;
+				transition: all 0.4s ease 0s;
+				display: block;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #fff;
+				animation-name:span;
+				animation-duration:0.4s;
+			}
+		}
+	}
+	@keyframes span{
+		0%{
+			transform:scale(0);
+		}
+		100%{
+			transform:scale(1);
+		}
 	}
 	@media (max-width: 900px) {
 		&__top{
