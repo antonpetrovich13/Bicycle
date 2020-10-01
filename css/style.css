@@ -682,6 +682,28 @@ body.lock {
   flex: 0 1 33.333%;
 }
 
+@media (max-width: 900px) {
+  .shop__top {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .shop__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+  }
+  .shop__column:first-child {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+  }
+  .shop__column:last-child {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+  }
+}
+
 .block-shop {
   height: 100%;
 }

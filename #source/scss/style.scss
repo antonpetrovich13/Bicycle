@@ -474,6 +474,21 @@ body.lock{
 	}
 	&__block {}
 	&__bottom {}
+	@media (max-width: 900px) {
+		&__top{
+			flex-wrap:wrap;
+		}
+		&__column{
+			flex: 0 1 50%;
+			&_b{}
+			&:first-child{
+				flex: 1 1 100%;
+			}
+			&:last-child{
+				flex: 1 1 100%;
+			}
+		}
+	}
 }
 .block-shop {
 	height: 100%;
