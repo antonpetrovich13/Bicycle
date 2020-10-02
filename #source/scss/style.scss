@@ -601,7 +601,7 @@ body.lock{
 		flex: 0 0 126px;
 	}
 	&__btn {
-		transition: all 1s ease 0s;
+		transition: all 0.5s ease 0s;
 		height: 69px;
 		background-color: #64c29e;
 		width: 100%;
@@ -609,7 +609,7 @@ body.lock{
 		font-weight: 300;
 		color: #ffffff;
 		&:hover{
-			transform:scale(0.9);
+			transform:scale(0.93);
 		}
 	}
 	@media (max-width: 900px) {
@@ -644,6 +644,86 @@ body.lock{
 			border: 1px solid #64c29e;
 		}
 }
+
+// <FOOTER> ============================================================
+
+.footer {
+	background-color: #f7f7f7;
+	padding: 100px 0;
+	&__row {
+		display: flex;
+		align-items: center;
+	}
+	&__column {
+		flex: 0 1 33.333%;
+	}
+	&__text {
+		color: #848789;
+		font-size: 13.9px;
+		font-weight: 400;
+		font-style: italic;
+		line-height: 17px;
+		& p{
+			&:first-child{
+				font-weight: 700;
+				font-size: 16px;
+			}
+		}
+	}
+	&__mail{
+		display: inline-block;
+		color: #848789;
+		transition:all 0.5s ease 0s;
+		&:hover{
+			transform:scale(0.92);
+		}
+	}
+	&__links {
+		display: flex;
+		align-items:center;
+		justify-content: center;
+	}
+	&__link {
+		margin: 0 7.5px;
+		transition: all 0.5s ease 0s;
+		&:hover{
+			transform:scale(0.85);
+		}
+	}
+	&__owner {
+		display: flex;
+		align-items: center;
+		justify-content:flex-end;
+	}
+	&__name {
+		margin: 0 9px 0 0;
+		font-size: 13.9px;
+		line-height: 19px;
+		font-style: italic;
+		color: #848789;
+	}
+	&__logotipe {
+		transition:all 0.5s ease 0s;
+		&:hover{
+			transform:scale(0.92);
+		}
+	}
+	@media (max-width: 900px) {
+		padding: 60px 0;
+	}
+	@media (max-width: 670px) {
+		padding: 30px 0;
+		&__row{
+			flex-direction:column;
+			align-items: center;
+			text-align: center;
+		}
+		&__links{
+			margin: 15px 0;
+		}
+	}
+}
+
 
 
 
